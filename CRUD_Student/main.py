@@ -4,13 +4,13 @@ from module import *
 def Main():
   exit = False
   studentslist = []
-  
+
   while not exit:
-    
+
     option = CRUDStudentsMenu()
-    
+
     match option:
-    
+
       case '0': # Exit
         exit = True
 
@@ -25,6 +25,7 @@ def Main():
         DeleteStudent(studentslist)
       case _: # Input ERROR
         print ("\n!!!TYPE A VALID NUMBER!!!\n");
+
 
 if __name__ == "__main__":
   Main()

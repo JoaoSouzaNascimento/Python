@@ -1,0 +1,11 @@
+<html>
+  <body>
+    <form method='POST' action='/usuarios/update/{{u.id}}'>
+      Name: <input type="text" id="name" name="name" value = {{u.name}}><br>
+      Cpf: <input type="text" id="cpf" name="cpf" value = {{u.cpf}}><br>
+      Sex: <input type="text" id="sex" name="sex" value = {{u.sex}}><br>
+      Birth: <input type="date" id="birth" name="birth" value = {{u.birth}}><br>
+      <input type="submit" value="Atualuzar">
+    </form>
+  </body>
+</html>
